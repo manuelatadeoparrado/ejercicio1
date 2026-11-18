@@ -33,3 +33,14 @@ Manuela tiene que revisar los datos que me pasa con su documento del proyecto.
 ## 18/11 · Comprobar que los cambios están en GitHub
 Criterio: que el CONTEXT corregido y el index.html con mis textos estén en el repo. ❌
 Aprendido: ChatGPT dijo que los había guardado, pero en GitHub seguían los viejos (solo se guardó el LOG). Después de cada OK, comprobar en GitHub o en la carpeta que el archivo ha cambiado de verdad.
+
+## 18/11 · Primer scroll
+Criterio: que sorprenda, siga STYLE-TILE.png, tenga buen contraste, rompa una regla a propósito y use un dato real. 1 vuelta. ❌ (a medias)
+Bien: sigue los colores y la tipografía del style tile, la pregunta sale enorme y usa un dato real (2.244 likes).
+Mal: el botón «Habla con Algo» es lima sobre la tarjeta lima y casi no se ve (falla el contraste); en el 2.244 las cifras están tan juntas que el punto desaparece; «Habla con Algo» no lleva a ningún chat; la «regla rota» (poner el dato a un lado) no es romper ninguna regla.
+Aprendido: pedirle que compruebe el contraste de cada botón con su fondo, y explicarle mejor qué es romper una regla a propósito.
+
+## 18/11 · Corregir el primer scroll
+Criterio: que el botón «Habla con Algo» se vea y que el 2.244 se lea bien. 1 vuelta. ✅
+Cambios: botón «Habla con Algo» marrón con texto blanco; quitado el espaciado negativo del número y del título; el número usa Anybody más ancha, como en el style tile.
+Pendiente: «Habla con Algo» todavía no lleva a ningún chat, y falta romper una regla de verdad.

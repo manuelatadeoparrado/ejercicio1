@@ -4,18 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>¿Y si mi algoritmo pudiera hablar por mí?</title>
-  <!-- El nombre tiene que coincidir con el del archivo: style.css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main class="portada">
+    <header class="cabecera">
+      <p class="etiqueta">Un espejo de mi Instagram</p>
+      <p class="ubicacion">Manuela Tadeo Parrado <span>Barcelona</span></p>
+    </header>
 
-  <h1>¿Y si mi algoritmo pudiera hablar por mí?</h1>
-  <p>Cada like, cada guardado y cada vídeo que veo hasta el final le cuenta algo a Instagram sobre mí.</p>
+    <section class="contenido" aria-labelledby="pregunta">
+      <div class="presentacion">
+        <h1 id="pregunta">¿Y si mi algoritmo pudiera hablar por mí?</h1>
+        <p class="intro">Soy Manuela. He dejado que mis datos de Instagram hablen un poco por mí.</p>
+        <button class="boton boton-secundario" id="boton" type="button">Ver mi pregunta</button>
+        <p class="pregunta-investigacion" id="texto" hidden>
+          ¿Qué revela el contenido que consumo en Instagram sobre mis intereses, mis gustos visuales y la identidad que construyo en el entorno digital?
+        </p>
+      </div>
 
-  <button id="boton">Ver mi pregunta</button>
-  <p id="texto" hidden>¿Qué revela el contenido que consumo en Instagram sobre mis intereses, mis gustos visuales y la identidad que construyo en el entorno digital?</p>
+      <aside class="dato" aria-label="Un dato de mis datos de Instagram">
+        <p class="dato-etiqueta">Una pista de mi algoritmo</p>
+        <p class="dato-numero">2.244</p>
+        <p class="dato-descripcion">likes en mis datos de Instagram</p>
+        <a class="boton boton-principal" href="#boton">Habla con Algo</a>
+      </aside>
+    </section>
 
-  <!-- El JavaScript va al final, cuando la página ya está cargada -->
+    <footer class="pie">
+      <p>Una versión de mí hecha de lo que miro, guardo y me gusta.</p>
+    </footer>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>

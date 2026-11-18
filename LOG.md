@@ -29,3 +29,7 @@ Correcciones:
 
 Aprendido: no dar por buenos los datos ni completar apartados por mi cuenta. Respetar las correcciones de Manuela y enseñarle el documento antes de guardarlo.
 Manuela tiene que revisar los datos que me pasa con su documento del proyecto.
+
+## 18/11 · Comprobar que los cambios están en GitHub
+Criterio: que el CONTEXT corregido y el index.html con mis textos estén en el repo. ❌
+Aprendido: ChatGPT dijo que los había guardado, pero en GitHub seguían los viejos (solo se guardó el LOG). Después de cada OK, comprobar en GitHub o en la carpeta que el archivo ha cambiado de verdad.

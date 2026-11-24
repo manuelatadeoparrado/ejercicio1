@@ -9,7 +9,7 @@ Me ayudas a diseñar y construir la web de mi proyecto de Taller 2 Web (Elisava)
 
 ## Qué puedes tocar
 - HTML, CSS y JavaScript, sin librerías.
-- Solo index.html, style.css y script.js.
+- Solo index.html, style.css y script.js. Las imágenes están en img/ (no las cambies).
 - El diseño sigue siempre STYLE-TILE.png (colores, tipografía Anybody, números, iconos y botones). Si una idea no encaja con el style tile, gana el style tile.
 - Dime en qué archivo va cada cambio y cambia solo lo necesario.
 

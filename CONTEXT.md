@@ -34,6 +34,7 @@ El objetivo es hacer visible la distancia entre quién soy y quién cree el algo
 - 03/11 · Cambiado el color de fondo y el título más grande. Motivo: primera modificación propia de la plantilla.
 - 16/11 · Algo siempre responde. Si no tiene un dato, se lo inventa a partir de mis datos, como hace el algoritmo, pero nunca inventa gustos que no salgan de mis datos.
 - 16/11 · Algo habla como yo: de forma coloquial y sin emojis.
+- 18/11 · La web es la de mi proyecto: paso mi Figma (Entrega 1) a HTML, scroll a scroll (Home, Datos, Referentes, Narrativa, Conclusiones, Concepto). Motivo: lo pide el profe para la V1.
 - 18/11 · El diseño sigue STYLE-TILE.png: paleta marrón, lima, caramelo y beige sobre blanco, tipografía Anybody, números grandes en Black con dato real e iconos de línea. Motivo: es la guía de estilo y manda sobre cualquier otra idea.
 
 ## Hipótesis (sin comprobar)
@@ -42,4 +43,4 @@ Que al hablar con Algo, la gente se pregunte qué sabe Instagram de ella (aún n
 ## Descartado
 
 ## Estado
-Web publicada con los textos del proyecto. Style tile hecho. Siguiente: el primer scroll.
+V1 hecha: los 6 scrolls de mi Figma en HTML, cada uno en 2 o 3 vueltas (ver LOG.md y versiones/). Siguiente: que se pueda hablar con Algo de verdad y el menú.

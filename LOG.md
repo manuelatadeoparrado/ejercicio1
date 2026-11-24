@@ -44,3 +44,71 @@ Aprendido: pedirle que compruebe el contraste de cada botón con su fondo, y exp
 Criterio: que el botón «Habla con Algo» se vea y que el 2.244 se lea bien. 1 vuelta. ✅
 Cambios: botón «Habla con Algo» marrón con texto blanco; quitado el espaciado negativo del número y del título; el número usa Anybody más ancha, como en el style tile.
 Pendiente: «Habla con Algo» todavía no lleva a ningún chat, y falta romper una regla de verdad.
+
+---
+# V1 de la web: pasar mi Figma a HTML, scroll a scroll
+Desde aquí trabajo con Claude, porque con la versión gratis de ChatGPT no me llegaban los mensajes. Mismo método: ficha de INSTRUCTIONS → versión → la compruebo con la ficha → corrijo. Las capturas de cada versión están en versiones/.
+
+## 18/11 · Scroll 1 · Home
+Criterio: que se parezca a mi Figma y que Algo sea lo que más llama la atención después de la pregunta, también en el móvil. 2 vueltas. ✅
+- v1: igual que el Figma (texto a la izquierda, Algo a la derecha). En el ordenador ✅, pero en el móvil Algo salía al final, después de todo el texto, y no se veía al entrar. ❌
+- v2: en el móvil Algo sube justo debajo de la pregunta grande; en el ordenador, Algo un poco más grande. ✅
+Aprendido: hay que mirar cada scroll también en el móvil, porque el orden cambia y lo importante puede quedar abajo.
+
+## 18/11 · Scroll 2 · Datos
+Criterio: que los números sean lo primero que se ve y coincidan con CONTEXT.md; que el texto se lea bien sobre el lima. 3 vueltas. ✅
+- v1: igual que el Figma (texto arriba y 4 tarjetas pequeñas abajo). Los números coinciden, pero quedan al final, pequeños, y media pantalla vacía a la derecha. ❌
+- v2: texto a la izquierda y números a la derecha, con el 2.244 en una tarjeta marrón grande. Error: el estilo de las tarjetas grises pisaba al de la marrón y el 2.244 salía blanco sobre gris, casi invisible. ❌
+- v3: arreglado el orden del CSS (la tarjeta marrón gana); el 2.244 en lima sobre marrón y las otras 3 cifras en fila. En el móvil, los números arriba y el texto debajo. Además, en el móvil se salía de la pantalla por la derecha: corregido. ✅
+Aprendido: después de cada cambio, comprobar el contraste de verdad (no fiarse del código) y mirar que nada se salga de la pantalla en el móvil.
+
+## 18/11 · Scroll 3 · Referentes
+Criterio: fichas con la misma estructura y Algo con el perro ocupando el hueco, como en el Figma; enlaces que funcionan. 2 vueltas. ✅
+- v1: las 4 fichas con sus textos y capturas, pero con alturas distintas (Click Click Click más corta), la imagen de Algo con el perro enorme (hacía la fila el doble de alta que Replika) y la captura de Replika cortaba el título. ❌
+- v2: fichas de cada fila igual de altas; Algo ocupa exactamente el hueco al lado de Replika; la captura de Replika enseña el título. Enlaces probados: abren en otra pestaña. ✅
+Nota: las capturas de los referentes no estaban en mi Figma exportadas; son capturas nuevas de cada web (18/11). En Replika recorté la parte de abajo porque salía una foto de una persona famosa.
+Aprendido: una imagen grande en una rejilla puede estirar toda la fila; hay que decirle que ocupe solo el hueco.
+
+## 18/11 · Scroll 4 · Narrativa
+Criterio: tabla con la palabra a la izquierda y el texto a la derecha; las etiquetas se entienden como mis keywords; en el móvil, una columna. 2 vueltas. ✅
+- v1: igual que el Figma, pero en pantalla ancha las dos columnas quedaban muy separadas, el texto a 16 px se leía pequeño y las etiquetas lima, sueltas en el centro, parecían de adorno. ❌
+- v2: tabla más estrecha (como el sangrado del Figma), texto a 18 px, columna de la izquierda más corta y las etiquetas alineadas a la izquierda con el título «Keywords» delante. En el móvil, todo en una columna. ✅
+Aprendido: lo que en Figma se ve bien en un frame de 1440 puede quedar vacío en el navegador; hay que limitar el ancho del texto.
+
+## 18/11 · Scroll 5 · Conclusiones
+Criterio: que la frase final sea lo que más se recuerda y que cada conclusión lleve un dato real. 2 vueltas. ✅
+- v1: igual que el Figma, con las 5 conclusiones y la raya caramelo. Los datos coinciden, pero la frase final, a 28 px y debajo de todo, no destacaba más que la lista. ❌
+- v2: lista a la izquierda y la frase final a la derecha, a 44 px; «Se parece a mí, pero no soy yo.» en marrón para que sea lo último que lees. En el móvil, la frase va al final. ✅
+Aprendido: si una frase es la conclusión de todo, tiene que tener su propio espacio, no ir debajo de la lista.
+
+## 18/11 · Scroll 6 · Concepto
+Criterio: el chat se ve como un chat, con los mensajes exactos del Figma; «Habla con Algo» de la Home baja hasta aquí; los botones «lo real» / «lo del algoritmo» no son de adorno. 2 vueltas. ✅
+- v1: tabla de concepto, tarjeta de Algo saludando y chat igual que el Figma. Pero en la Home no había ningún botón «Habla con Algo», y los botones de abajo no hacían nada («lo real» salía marcado sin que nadie lo hubiera elegido). ❌
+- v2: botón «Habla con Algo» en la Home, que baja al chat (probado). Los botones «lo real» / «lo del algoritmo» se marcan al pulsarlos y enseñan una frase; ninguno sale marcado al principio. La frase dice claro que el chat de verdad llegará más adelante. ✅
+Aprendido: un botón que no hace nada es decorativo; o funciona o se dice que todavía no funciona.
+
+## 18/11 · V1 completa
+Los 6 scrolls juntos, probados en ordenador (1440 px) y en móvil (390 px): nada se sale de la pantalla y no hay errores. Capturas: versiones/web-V1-ordenador.png y versiones/web-V1-movil.png.
+Pendiente para la V2: que se pueda hablar con Algo de verdad; menú (Investigación · Conceptualización · Prototipado); juntarlo con lo que hago en Figma con Carla.
+
+## 18/11 · Navegación (menú fijo)
+Criterio: desde cualquier punto, cada píldora lleva a su apartado; la del apartado actual se pone lima; el logo lleva arriba; el menú no tapa los títulos. 2 vueltas. ✅
+(Idea mía: en el Figma, el logo lleva a la pantalla principal y las píldoras a cada apartado desde cualquier página.)
+- v1: menú fijo con el logo, Investigación · Conceptualización · Prototipado y las 6 píldoras; la píldora lima cambia sola al hacer scroll. En el ordenador, bien. Pero en el móvil Conceptualización y Prototipado se salían de la pantalla (la web se podía mover de lado) y el logo no subía del todo arriba. ❌
+- v2: en el móvil, Investigación · Conceptualización · Prototipado bajan a su propia línea; las píldoras se deslizan de lado y la activa siempre se ve; el logo lleva arriba del todo. Probadas las 6 píldoras y el logo en ordenador y móvil: el título de cada apartado queda justo debajo del menú. ✅
+Conceptualización y Prototipado salen en gris porque todavía no existen.
+Aprendido: los menús hay que probarlos haciendo clic de verdad y esperando a que termine el scroll; si no, parece que fallan cuando no fallan.
+
+## 18/11 · Estados del menú y de las píldoras
+Criterio: los mismos estados que mis componentes de Figma (normal / ratón encima / activo) y que todo se lea bien. 2 vueltas. ✅
+(Idea mía: en Figma hice los componentes «menu» y «Pestaña» con sus variantes.)
+- v1: igual que el Figma. Píldoras: blancas con borde → beige (#D8C4AC) con el ratón encima → lima cuando estás en ese apartado. Menú: normal → lima con el ratón encima → negrita el activo. Las píldoras, bien (marrón sobre beige, contraste 8,6). Pero el texto lima sobre blanco del menú casi no se lee: contraste 1,4 (el mínimo es 4,5). ❌
+- v2: con el ratón encima, el texto del menú sigue marrón y el lima pasa a un subrayado gordo debajo. Se mantiene el color de mi Figma y se lee bien. ✅
+Aprendido: un color que en Figma parece bonito puede no leerse en texto; el contraste se puede medir, no hace falta fiarse del ojo.
+
+## 18/11 · Menú transparente al bajar
+Criterio: al hacer scroll, el fondo del menú al 50 % de opacidad para que no tape la web; arriba del todo, blanco; el menú se tiene que seguir leyendo. 2 vueltas. ✅
+(Idea mía.)
+- v1: fondo blanco al 50 % al bajar. Se ve la web por detrás, pero los textos de la web se mezclan con los del menú (por ejemplo, las etiquetas LÚDICO, ESPEJO… salían encima del logo) y no se lee bien. ❌
+- v2: mismo 50 %, pero lo de detrás sale desenfocado. Se ven los colores de la web (el lima de Datos, las fotos) sin que se mezclen las letras. Arriba del todo vuelve a ser blanco. ✅
+Aprendido: la transparencia sola hace que se mezclen dos textos; con desenfoque se ve la web y el menú se sigue leyendo.

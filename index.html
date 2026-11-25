@@ -93,13 +93,21 @@
     </div>
 
     <!-- Resultado: lo que Algo cree que eres + ¿es real? -->
+    <!-- Test sobre el visitante: ahora Algo te pregunta a ti -->
+    <div class="test" id="test" hidden>
+      <p class="etiqueta">Ahora te toca a ti</p>
+      <p class="test-pregunta" id="test-pregunta"></p>
+      <div class="test-opciones" id="test-opciones"></div>
+      <p class="test-paso" id="test-paso"></p>
+    </div>
+
     <div class="resultado" id="resultado" hidden>
       <p class="etiqueta">Algo ha terminado de aprender de ti</p>
       <h2 id="resultado-frase"></h2>
       <p>¿Es real? Márcalo tú.</p>
       <ul class="grafica" id="grafica"></ul>
       <div class="resultado-pie">
-        <p class="pista-cuaderno">Algo lo ha apuntado todo en su cuaderno. <b>Visita su habitación y búscalo.</b></p>
+        <p class="pista-cuaderno">Algo lo ha apuntado todo sobre ti en su cuaderno. <b>Visita su habitación y búscalo.</b></p>
         <a class="boton" href="#habitacion" data-ir="habitacion">Visitar a Algo →</a>
       </div>
     </div>

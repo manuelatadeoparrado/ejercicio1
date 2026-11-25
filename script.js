@@ -292,8 +292,9 @@ async function saturar() {
   pose(algoImg, aprende ? 'rie' : 'sentado');
 
   if (aprende) {
+    await testVisitante();
     const top = Object.entries(perfil).sort((a, b) => b[1] - a[1]).slice(0, 4);
-    $('#resultado-frase').textContent = `Algo cree que eres ${top.map(([k]) => k).slice(0, 3).join(', ')}. Y que lo sabe todo de ti.`;
+    $('#resultado-frase').textContent = `Con ${preguntas} preguntas y ${TEST.length} respuestas, Algo ya cree que eres ${top.map(([k]) => k).slice(0, 3).join(', ')}. Y que lo sabe todo de ti.`;
     const ul = $('#grafica');
     ul.innerHTML = '';
     top.forEach(([k, v]) => {
@@ -313,10 +314,41 @@ async function saturar() {
   }
 }
 
+// ---------- el test sobre el visitante ----------
+async function testVisitante() {
+  $('#conversacion').hidden = true;
+  $('#test').hidden = false;
+  pose(algoImg, 'quieto');
+  for (let n = 0; n < TEST.length; n++) {
+    const q = TEST[n];
+    $('#test-pregunta').textContent = q.pregunta;
+    $('#test-paso').textContent = `${n + 1} / ${TEST.length}`;
+    const op = $('#test-opciones');
+    op.innerHTML = '';
+    const etiqueta = await new Promise((res) => {
+      q.opciones.forEach(([texto, et]) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = texto;
+        b.addEventListener('click', () => res(et));
+        op.appendChild(b);
+      });
+    });
+    pose(algoImg, 'rie');
+    // Algo exagera: lo que contestas lo apunta con mucha seguridad
+    perfil[etiqueta] = 88 + Math.floor(Math.random() * 11);
+    $('#cinta').hidden = false;
+    $('#cinta-texto').textContent = Object.entries(perfil).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k} ${v}%`).join('   ·   ');
+    await esperar(350);
+    pose(algoImg, 'quieto');
+  }
+  $('#test').hidden = true;
+}
+
 function reiniciarChat() {
   aprende = null; preguntas = 0; ocupado = false; terminado = false;
   usados = new Set(); perfil = {}; veredicto = {}; ultima = '';
-  ['#resultado', '#resultado-no', '#preguntar', '#cinta'].forEach((s) => { $(s).hidden = true; });
+  ['#resultado', '#resultado-no', '#preguntar', '#cinta', '#test'].forEach((s) => { $(s).hidden = true; });
   $('#conversacion').hidden = false;
   $('#permiso').hidden = false;
   $('#pregunta-grande').textContent = '';
@@ -358,7 +390,7 @@ OBJETOS.forEach((o) => {
   b.className = 'objeto ' + (o.modo === 'real' ? 'real' : 'alg') + (o.id === 'cuaderno' ? ' cuaderno-obj' : '');
   b.style.setProperty('--x', o.x + '%');
   b.style.setProperty('--y', o.y + '%');
-  b.innerHTML = `<i></i><span>${o.nombre}</span>`;
+  b.innerHTML = `<i></i><span>${o.id === 'cuaderno' ? 'el cuaderno de Algo' : o.nombre}</span>`;
   b.addEventListener('click', () => irObjeto(o, b));
   $('#objetos').appendChild(b);
 });
@@ -422,7 +454,7 @@ function entrarHabitacion() {
   if (!primeraVisita) return;
   primeraVisita = false;
   pose(algoCuarto.querySelector('img'), 'saluda');
-  setTimeout(() => decir(terminado && aprende ? 'pasa pasa. mi cuaderno anda por aqui, a ver si lo encuentras' : 'pasa pasa, toca lo q quieras'), 600);
+  setTimeout(() => decir(terminado && aprende ? 'pasa pasa. mi cuaderno es el punto marron, el q pone «el cuaderno de Algo»' : 'pasa pasa, toca lo q quieras'), 600);
 }
 
 // ---------- el cuaderno de apuntes ----------

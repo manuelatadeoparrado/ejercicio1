@@ -171,3 +171,9 @@ Entrego esta versión porque no es la entrega final: lo que se evalúa es que el
 ## 25/11 · Habitación real, 3.ª vuelta (Gemini)
 Criterio: que sea mi habitación. ✅
 Pido cambios concretos sobre la 2.ª: fuera radiador y cremas, la cajonera con trabajos de la uni encima, el gorro tirado en el suelo, el cuaderno grande en el escritorio, póster de un BMW, mi Lego rosa de Suki, bolsas de compras (eso sí es de mi Instagram). Puntos para tocar recolocados.
+
+## 25/11 · Test sobre el visitante y cuaderno visible
+Criterio: que al final Algo te haga un test a TI, no sobre mí, y que el cuaderno se encuentre. 1 vuelta. ✅
+- Antes, el resultado salía de lo que preguntabas sobre mí y parecía un test sobre Manuela. ❌
+- Ahora, cuando Algo se satura, te pregunta 5 cosas a ti (a qué hora miras el móvil, qué te sale en el feed, perros o gatos, si has comprado por un anuncio, si te fías de Instagram). Con cada respuesta te pone una etiqueta exagerada (88-99 %) y al final dice qué cree que eres. Lo marcas como real o no y lo encuentras en su cuaderno.
+- El cuaderno lleva su nombre siempre visible («el cuaderno de Algo») y Algo te dice dónde está.

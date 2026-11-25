@@ -470,3 +470,21 @@ body.modo-real .algo-cuarto .cuerpo img { filter: saturate(.9) brightness(1.02) 
 .algo-fuera.sale .sombra { animation: sombraSale 1.1s forwards; }
 @keyframes sombraSale { 0% { opacity: 0; } 55% { opacity: .4; transform: translateX(-50%) scale(.7); } 100% { opacity: 1; transform: translateX(-50%) scale(1); } }
 @media (max-width: 820px) { .algo-cuarto { width: calc(22% * var(--esc, 1)); } .hablar-algo .cuerpo { max-width: 190px; } }
+
+/* ---------- el test sobre el visitante ---------- */
+.test { grid-column: 2; align-self: center; max-width: 640px; }
+.test-pregunta { margin: 0 0 24px; font-size: clamp(30px, 3.6vw, 56px); font-weight: 900; font-stretch: 112%; line-height: 1.05; }
+.test-opciones { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
+.test-opciones button {
+  padding: 14px 24px; border: 2px solid var(--texto); border-radius: 999px;
+  background: var(--fondo); color: var(--texto); box-shadow: 4px 4px 0 var(--texto);
+  font: inherit; font-size: 20px; font-weight: 800; cursor: pointer;
+  animation: pop .35s cubic-bezier(.3,1.6,.5,1) backwards;
+}
+.test-opciones button:nth-child(2) { animation-delay: .06s; } .test-opciones button:nth-child(3) { animation-delay: .12s; } .test-opciones button:nth-child(4) { animation-delay: .18s; }
+.test-opciones button:hover { background: var(--acento); transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--texto); }
+.test-paso { margin: 0; color: var(--secundario); font-weight: 700; }
+/* el cuaderno se ve siempre */
+.objeto.cuaderno-obj span { opacity: 1 !important; transform: none !important; background: var(--secundario); color: var(--fondo); border-color: var(--texto); }
+.objeto.cuaderno-obj i { animation: latido 1.2s infinite; }
+@media (max-width: 820px) { .test-opciones button { font-size: 16px; padding: 10px 16px; } }

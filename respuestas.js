@@ -198,3 +198,20 @@ const FEED = [
   { tema: 'festivales', color: 'marron', likes: '4.2k' },
   { tema: 'graffiti', color: 'caramelo', likes: '310' }
 ];
+
+// =============================================================
+// EL TEST SOBRE TI (cuando Algo se satura, te pregunta a ti)
+// Cada respuesta le da a Algo una etiqueta sobre ti… y él exagera.
+// =============================================================
+const TEST = [
+  { pregunta: '¿a qué hora miras más el móvil?', opciones: [
+    ['por la mañana', 'madrugador/a'], ['por la tarde', 'de siesta y scroll'], ['por la noche', 'nocturno/a'], ['todo el día', 'adicto/a al scroll'] ] },
+  { pregunta: '¿qué te sale más en el feed?', opciones: [
+    ['memes', 'busca memes'], ['moda', 'comprador/a compulsivo/a'], ['deporte', 'obsesionado/a con el gym'], ['viajes', 'viajero/a frecuente'] ] },
+  { pregunta: '¿perros o gatos?', opciones: [
+    ['perros', 'amante de los perros'], ['gatos', 'de gatos'], ['los dos', 'amante de los animales'], ['ninguno', 'no le gustan los animales'] ] },
+  { pregunta: '¿has comprado algo por un anuncio de Instagram?', opciones: [
+    ['sí', 'compra por impulso'], ['no', 'resistente a los anuncios'], ['no me acuerdo', 'compra sin darse cuenta'] ] },
+  { pregunta: '¿te fías de lo que te sale en Instagram?', opciones: [
+    ['sí', 'confiado/a'], ['no', 'desconfiado/a'], ['a veces', 'indeciso/a'] ] }
+];

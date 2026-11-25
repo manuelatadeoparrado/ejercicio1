@@ -112,3 +112,59 @@ Criterio: al hacer scroll, el fondo del menú al 50 % de opacidad para que no ta
 - v1: fondo blanco al 50 % al bajar. Se ve la web por detrás, pero los textos de la web se mezclan con los del menú (por ejemplo, las etiquetas LÚDICO, ESPEJO… salían encima del logo) y no se lee bien. ❌
 - v2: mismo 50 %, pero lo de detrás sale desenfocado. Se ven los colores de la web (el lima de Datos, las fotos) sin que se mezclen las letras. Arriba del todo vuelve a ser blanco. ✅
 Aprendido: la transparencia sola hace que se mezclen dos textos; con desenfoque se ve la web y el menú se sigue leyendo.
+
+## 24/11 · Scroll 3 · Referentes (v3: capturas enteras)
+Criterio: que las capturas de los referentes se vean enteras, sin recortar ni ampliar. 1 vuelta. ✅
+(Lo vi yo el 18/11: las capturas se veían «comidas», como ampliadas. Lo dejé programado para cuando volviera el límite.)
+- v3: las capturas ahora se ven enteras dentro de un recuadro del mismo tamaño en las 4 fichas. Data Selfie, Click Click Click y Akinator llenan el recuadro; la de Replika es más apaisada y le queda una franja blanca arriba y abajo. Probado en ordenador y móvil.
+Aprendido: «cubrir» el hueco recorta la imagen; para una captura de referencia es mejor «contener» y que se vea toda.
+
+## 24/11 · Revisar las fichas para la entrega
+Criterio de la entrega: cada ficha tiene que decir dónde decido yo y quién verifica. 1 vuelta. ✅
+- Añadidas a todas las fichas las líneas DECIDO YO y VERIFICA, y al principio de INSTRUCTIONS.md los pasos para repetir el loop.
+Aprendido: el «lo sabré porque» dice cómo se comprueba, pero no quién decide; hay que dejarlo escrito.
+
+---
+# V2 · La web final con Algo (25/11)
+Lo que vimos en clase: las webs de los compañeros con IA estaban mucho más trabajadas, y yo había pasado mi Figma tal cual. El profe quiere la web final, no la memoria. La V1 queda como «La investigación» (memoria.html).
+Ecosistema de IA: Gemini (imágenes de Algo y habitaciones) · ChatGPT (ideas y una plantilla) · Claude (código) · yo (concepto, textos, mis respuestas y validar).
+
+## 25/11 · Probar la plantilla de ChatGPT
+Criterio: que sirva como base para mi web. 1 vuelta. ❌
+Era una web genérica con un muñeco con gafas que no es Algo, emojis, un correo inventado y textos de relleno.
+Aprendido: una plantilla genérica no sabe nada de mi proyecto. Me quedo con ideas sueltas (preguntas rápidas, stickers, un modo especial) y lo demás lo hago con mis datos.
+
+## 25/11 · V2 versión A: chat con Algo en tres columnas
+Criterio: que no sea la típica web. 2 vueltas. ❌
+- v1: Algo a la izquierda, chat en el centro y «tu perfil según Algo» a la derecha, con etiquetas arrastrables. Funcionaba, pero los stickers tapaban el título y el chat.
+- v2: stickers abajo. Funciona, pero al verlo: es el mismo formato que todas las webs de clase.
+Aprendido: funcionar no basta, tiene que ser una experiencia. Pido ideas y elijo mezclar tres: Algo se escapa del móvil, solo Algo y tú, y la habitación de Algo.
+
+## 25/11 · V2 versión B: tres escenas y una gincana
+Criterio: las fichas de la V2 en INSTRUCTIONS.md (escenas 1 a 5). 1 vuelta. ✅ (pendiente la habitación real definitiva)
+- Entrada: Algo dentro de un móvil con mi feed, empuja, la pantalla se rompe y sale. Dos puertas.
+- Habla con Algo: permiso «¿aceptas que Algo aprenda de ti?», Algo enorme y respuestas gigantes; debajo, mis respuestas reales del test. Falla cada vez más y a la 6.ª se satura. «Algo cree que eres…» con barras y «¿es real? sí / no».
+- Habitación: tocas cosas, Algo camina hasta ellas. Modo algoritmo / modo real.
+- Cuaderno de Algo: lo que apuntó del visitante, tachado lo que dijo que no. Final: «Ni mi algoritmo ni yo sabemos del todo quién soy. ¿Y el tuyo, qué dice de ti?»
+Probado entero en ordenador y móvil, con «sí» y con «no» al permiso. Sin errores. En el móvil las puertas tapaban a Algo: corregido.
+
+## 25/11 · Las imágenes de Algo (Gemini)
+- 13 poses (quieto, saluda, habla, anda x2, empuja el cristal, salta, sentado, pensativo, ríe, sorpresa, saturado, con el móvil). Las hojas venían con todas juntas; Claude las recorta sin fondo y a la misma escala.
+- Habitación del algoritmo: terracota, techno, corazones en la nevera, maleta con pegatinas. Decido dejarla así: es como me ve Instagram, una chica de catálogo.
+- Habitación real, 1.ª vuelta: parecía de un hombre, ropa que no es mía. ❌ Le paso fotos de mi cuarto a Gemini.
+- 2.ª vuelta: mucho mejor (mi cama, Julio en su cama gris, la bolsa de deporte, la tele con el pósit). Falla: zapatero mal, radiador y cajonera grande sobran, cremas que tengo en el baño, cargador suelto, falta el coche. Pendiente 3.ª vuelta (Gemini sin usos hasta las 15:22).
+Aprendido: con fotos reales de referencia Gemini se acerca mucho más que describiendo con palabras.
+
+## 25/11 · Algo más real
+Criterio: que Algo no parezca una pegatina que se mueve. 1 vuelta. ✅ (mejorable con imágenes más grandes)
+- Quitado el halo blanco del recorte; sombra en el suelo debajo de los pies (no una sombra de pegatina); respira; parpadea; abre y cierra la boca al hablar; una luz le sigue el ratón; en la habitación se hace pequeño al fondo y grande delante, y la sombra se encoge al dar el paso.
+Aprendido: lo que lo hace parecer real son detalles pequeños y constantes (respirar, parpadear, la sombra), no una animación grande.
+
+## 25/11 · Revisión antes de entregar
+Al ver el vídeo del recorrido: ❌ en tres cosas, que quedan para la siguiente vuelta.
+- La salida del móvil se queda corta: Algo no sale de verdad hacia ti.
+- «Habla con Algo» ha perdido la sensación de chat: quiero que las voces reales salten alrededor de Algo y lo vayan rodeando.
+- Algo sigue pareciendo una imagen recortada. Necesito poses más grandes de Gemini.
+- Y la habitación real: 3.ª vuelta con Gemini (zapatero, quitar radiador y cajonera, el coche de Lego, el gorro tirado).
+Lo que sí funciona y me gusta: tocar los objetos y que Algo diga que son suyos, y la gincana del cuaderno.
+Entrego esta versión porque no es la entrega final: lo que se evalúa es que el proceso se pueda seguir y repetir.

@@ -1,0 +1,379 @@
+/* Colores y medidas: salen de STYLE-TILE.png */
+:root {
+  --fondo: #FFFFFF;
+  --texto: #3B2418;
+  --acento: #C6E35A;
+  --secundario: #B0704A;
+  --apoyo: #D8C4AC;
+  --gris: #F4F4F4;
+  --margen: 80px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: "Anybody", sans-serif;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+img { max-width: 100%; display: block; }
+
+.scroll {
+  padding: 96px var(--margen);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.etiqueta {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* ---------- MENÚ FIJO ---------- */
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--fondo);
+  padding: 20px var(--margen) 16px;
+  border-bottom: 2px solid var(--gris);
+}
+.menu-arriba {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.logo {
+  color: var(--texto);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+  font-stretch: 115%;
+  line-height: 1;
+}
+.logo b { color: var(--acento); }
+.logo span { display: block; color: var(--secundario); }
+.menu-secciones { display: flex; gap: 28px; font-size: 18px; }
+/* menú: normal / ratón encima / activo (como los estados del componente «menu» de mi Figma) */
+.menu-secciones a, .menu-secciones span { color: var(--texto); text-decoration: none; font-weight: 400; }
+/* ratón encima: el lima va en un subrayado gordo, porque el texto lima sobre blanco no se lee (contraste 1,4) */
+.menu-secciones a:hover { text-decoration: underline; text-decoration-color: var(--acento); text-decoration-thickness: 5px; text-underline-offset: 6px; }
+.menu-secciones a.activa { font-weight: 800; }
+.pronto { opacity: .45; cursor: default; }
+.pildoras { display: flex; gap: 12px; }
+.pildoras a {
+  padding: 4px 18px;
+  border: 1.5px solid var(--texto);
+  border-radius: 999px;
+  color: var(--texto);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.pildoras a.actual { background: var(--acento); }
+/* píldoras: normal / ratón encima / activa (como el componente «Pestaña» de mi Figma) */
+.pildoras a:not(.actual):hover { background: var(--apoyo); }
+
+/* al bajar, el fondo del menú se vuelve transparente al 50 % para no tapar la web */
+.menu { transition: background-color .3s; }
+.menu.bajando {
+  background: rgba(255, 255, 255, 0.5);
+  /* desenfoca lo de detrás: se ve la web, pero el menú se sigue leyendo */
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+/* que el menú no tape el título al saltar a un apartado */
+section[id] { scroll-margin-top: 150px; }
+
+/* ---------- SCROLL 1 · HOME ---------- */
+.home {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-areas:
+    "h1    algo"
+    "texto algo";
+  align-items: start;
+  column-gap: 64px;
+}
+.home h1 { grid-area: h1; }
+.home-texto { grid-area: texto; }
+.home-algo { grid-area: algo; align-self: center; }
+
+
+h1 {
+  margin: 0 0 32px;
+  font-size: 56px;
+  font-weight: 900;
+  font-stretch: 115%;
+  line-height: 1.1;
+}
+
+.pregunta {
+  margin: 0 0 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.intro {
+  margin: 0;
+  max-width: 620px;
+  font-size: 18px;
+}
+
+.home-algo {
+  justify-self: center;
+  width: 100%;
+  max-width: 460px;
+}
+
+/* ---------- BANDAS DE COLOR (ocupan todo el ancho) ---------- */
+.banda-lima { background: #DCE995; }
+.banda-gris { background: var(--gris); }
+
+h2 {
+  margin: 0 0 32px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+/* ---------- SCROLL 2 · DATOS ---------- */
+.datos {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas: "h2 h2" "texto cifras";
+  column-gap: 64px;
+  align-items: center;
+}
+.datos h2 { grid-area: h2; }
+.datos-texto { grid-area: texto; max-width: 620px; }
+.cifras { grid-area: cifras; }
+.datos-texto p { margin: 0 0 20px; }
+.datos-texto ul { margin: 0 0 40px; padding-left: 0; list-style: none; }
+.datos-texto li::before { content: "– "; }
+
+.cifras {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.cifra {
+  background: var(--gris);
+  border-radius: 16px;
+  padding: 20px 16px 16px;
+}
+.cifra strong {
+  display: block;
+  font-size: 52px;
+  font-weight: 900;
+  font-stretch: 130%;
+  line-height: 1;
+}
+.cifra span { font-size: 16px; font-style: italic; }
+/* el 2.244 manda: tarjeta marrón y número enorme (va después de .cifra para que gane) */
+.cifra.cifra-grande {
+  grid-column: 1 / -1;
+  background: var(--texto);
+  color: var(--fondo);
+}
+.cifra.cifra-grande strong { font-size: 96px; color: var(--acento); }
+
+/* ---------- SCROLL 3 · REFERENTES ---------- */
+.refs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch; /* todas las fichas de una fila, igual de altas */
+}
+.ref {
+  background: var(--gris);
+  border-radius: 16px;
+  padding: 20px 16px;
+  font-size: 16px;
+}
+.ref h3 { margin: 0 0 4px; font-size: 28px; font-weight: 400; }
+.ref a { display: inline-block; margin-bottom: 12px; color: var(--texto); font-size: 13px; font-style: italic; }
+/* la captura se ve entera (sin recortar ni ampliar), sobre un fondo blanco del mismo tamaño en todas las fichas */
+.ref img { border-radius: 8px; margin-bottom: 12px; aspect-ratio: 4 / 3; object-fit: contain; background: var(--fondo); width: 100%; }
+.ref .etiqueta { font-size: 13px; }
+.ref p { margin: 0 0 12px; }
+/* Algo ocupa el hueco al lado de Replika, sin hacer la fila más alta */
+.refs-algo { grid-column: span 2; position: relative; border-radius: 16px; overflow: hidden; background: #CDCDCD; }
+.refs-algo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 45%; }
+
+/* ---------- TABLA (Narrativa y Concepto) ---------- */
+.tabla { margin: 0 0 40px; max-width: 1040px; }
+.fila {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 32px;
+  padding: 20px 0;
+  border-bottom: 3px solid var(--gris);
+}
+.fila:last-child { border-bottom: 0; }
+.fila h3 { margin: 0; font-size: 28px; font-weight: 400; }
+.fila p { margin: 0; font-size: 18px; padding-top: 6px; }
+
+/* ---------- SCROLL 4 · NARRATIVA ---------- */
+.cajas {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+  max-width: 1040px;
+}
+.caja { background: var(--gris); border-radius: 16px; padding: 24px; }
+.caja h3 { margin: 0 0 12px; font-size: 24px; font-weight: 400; }
+.caja p { margin: 0; font-size: 18px; }
+
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.keywords li {
+  background: var(--acento);
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* ---------- SCROLL 5 · CONCLUSIONES ---------- */
+.conclusiones {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas: "h2 h2" "lista frase";
+  column-gap: 64px;
+  align-items: center;
+}
+.conclusiones h2 { grid-area: h2; }
+.lista-conclusiones { grid-area: lista; margin: 0; padding: 0; list-style: none; }
+.frase-final { grid-area: frase; }
+.lista-conclusiones li {
+  border-left: 4px solid var(--secundario);
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+.lista-conclusiones p { margin: 0; font-size: 16px; }
+.lista-conclusiones .etiqueta { font-size: 12px; margin-bottom: 2px; }
+.frase-final {
+  margin: 0;
+  color: var(--secundario);
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+.frase-final em { font-style: normal; color: var(--texto); }
+
+/* ---------- SCROLL 6 · CONCEPTO ---------- */
+.chat-bloque {
+  display: grid;
+  grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+  max-width: 1040px;
+}
+.chat-algo { border-radius: 24px; }
+.chat-titulo {
+  margin: 0 0 16px;
+  color: var(--secundario);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.mensajes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--apoyo);
+}
+.msg { margin: 0; max-width: 70%; padding: 10px 14px; border-radius: 14px; font-size: 16px; line-height: 1.3; }
+.msg.yo { align-self: flex-end; background: var(--texto); color: var(--fondo); }
+.msg.algo { align-self: flex-start; background: #F6EEE4; }
+.votos { display: flex; gap: 12px; }
+.voto {
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 2px solid var(--secundario);
+  background: var(--fondo);
+  color: var(--texto);
+  cursor: pointer;
+}
+.voto[aria-pressed="true"] { background: var(--texto); border-color: var(--texto); color: var(--fondo); }
+.voto-nota { margin: 16px 0 0; font-size: 16px; }
+
+/* botón «Habla con Algo» de la Home */
+.boton {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: var(--texto);
+  color: var(--fondo);
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.boton:hover { background: var(--secundario); }
+
+/* ---------- MÓVIL ---------- */
+@media (max-width: 760px) {
+  :root { --margen: 24px; }
+  .scroll { padding: 56px var(--margen); }
+  .home {
+    grid-template-columns: 1fr;
+    grid-template-areas: "h1" "algo" "texto";
+  }
+  h1 { font-size: 40px; margin-bottom: 8px; }
+  .home-algo { max-width: 220px; margin-bottom: 24px; }
+  h2 { font-size: 32px; }
+  .datos { grid-template-columns: minmax(0, 1fr); grid-template-areas: "h2" "cifras" "texto"; }
+  .cifras { margin-bottom: 40px; }
+  .cifra strong { font-size: 40px; }
+  .cifra.cifra-grande strong { font-size: 64px; }
+  .cifra strong { font-size: 28px; }
+  .cifras { gap: 8px; }
+  .cifra { padding: 14px 10px 10px; }
+  .cifra span { font-size: 13px; }
+  .refs { grid-template-columns: minmax(0, 1fr); }
+  .refs-algo { grid-column: auto; aspect-ratio: 4 / 5; }
+  .fila { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .cajas { grid-template-columns: minmax(0, 1fr); }
+  .keywords li { font-size: 18px; }
+  .lista-conclusiones li { padding-left: 16px; }
+  .conclusiones { grid-template-columns: minmax(0, 1fr); grid-template-areas: "h2" "lista" "frase"; }
+  .frase-final { font-size: 30px; margin-top: 32px; }
+  .chat-bloque { grid-template-columns: minmax(0, 1fr); }
+  .menu { padding: 12px var(--margen) 10px; }
+  .menu-arriba { margin-bottom: 10px; }
+  .logo { font-size: 18px; }
+  .menu-arriba { flex-wrap: wrap; row-gap: 8px; }
+  .menu-secciones { width: 100%; gap: 16px; font-size: 13px; }
+  .pildoras { overflow-x: auto; padding-bottom: 4px; }
+  .pildoras a { font-size: 13px; padding: 3px 12px; }
+  section[id] { scroll-margin-top: 130px; }
+  .chat-algo { max-width: 260px; }
+  .msg { max-width: 85%; }
+}

@@ -37,10 +37,18 @@ El objetivo es hacer visible la distancia entre quién soy y quién cree el algo
 - 18/11 · La web es la de mi proyecto: paso mi Figma (Entrega 1) a HTML, scroll a scroll (Home, Datos, Referentes, Narrativa, Conclusiones, Concepto). Motivo: lo pide el profe para la V1.
 - 18/11 · El diseño sigue STYLE-TILE.png: paleta marrón, lima, caramelo y beige sobre blanco, tipografía Anybody, números grandes en Black con dato real e iconos de línea. Motivo: es la guía de estilo y manda sobre cualquier otra idea.
 
+- 25/11 · La web final (V2) no copia el Figma: es una experiencia en 3 partes (Algo se escapa del móvil, Habla con Algo, Visita a Algo) unidas por una gincana (el cuaderno). Motivo: las webs de clase eran todas iguales y quiero llevarlo a otro nivel.
+- 25/11 · Debajo de cada respuesta de Algo sale lo mío (mi test de autoconocimiento). Lo de mi gente saldrá cuando tenga sus respuestas. Sin porcentajes en lo real.
+- 25/11 · Algo aprende del visitante solo si acepta, y no se guarda nada.
+- 25/11 · Dos habitaciones: la que se imagina Instagram (de catálogo) y la mía de verdad (hecha a partir de mis fotos).
+
+## Mis respuestas reales (test, nov. 2026)
+Viernes a la 1: trabajando · Lo que más me define: no sé · Día libre: todas · Compradora: sí · Planear o improvisar: improviso · Me conozco: a ratos · ¿Algo habla como yo?: no se parece · Horas de móvil: 4 h 30 · Techno: sí · Perros: sí (Julio, jack russell) · Coches y motos: sí · Me fío de Instagram: no · Tímida: depende · Igual en persona que por mensaje: depende · Subo mucho a Instagram: no · Ambiciosa: sí.
+
 ## Hipótesis (sin comprobar)
 Que al hablar con Algo, la gente se pregunte qué sabe Instagram de ella (aún no lo he probado con nadie).
 
 ## Descartado
 
 ## Estado
-V1 hecha: los 6 scrolls de mi Figma en HTML, cada uno en 2 o 3 vueltas (ver LOG.md y versiones/). Siguiente: que se pueda hablar con Algo de verdad y el menú.
+V2 hecha: la web final con Algo (entrada, chat, habitación y cuaderno). La V1 queda como «La investigación». Siguiente: meter las respuestas de mi gente cuando lleguen del test.

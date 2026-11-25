@@ -3,181 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>¿Y si mi algoritmo pudiera hablar por mí? · Manuela Tadeo Parrado</title>
+  <title>Algo · ¿Y si mi algoritmo pudiera hablar por mí?</title>
+  <meta name="description" content="Algo es mi algoritmo de Instagram hecho peluche. Se escapa del móvil, habla contigo y te enseña su habitación.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,400..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
-<body id="arriba">
+<body data-escena="entrada">
 
-  <!-- MENÚ FIJO -->
-  <header class="menu">
-    <div class="menu-arriba">
-      <a class="logo" href="#arriba" aria-label="Ir al inicio">manuela<b>.</b><span>TadeoParrado</span></a>
-      <nav class="menu-secciones" aria-label="Partes del proyecto">
-        <a class="activa" href="#home">Investigación</a>
-        <span class="pronto" title="Próximamente">Conceptualización</span>
-        <span class="pronto" title="Próximamente">Prototipado</span>
-      </nav>
-    </div>
-    <nav class="pildoras" aria-label="Apartados de la investigación">
-      <a href="#home" class="actual">Pregunta</a>
-      <a href="#datos">Datos</a>
-      <a href="#referentes">Referentes</a>
-      <a href="#narrativa">Narrativa</a>
-      <a href="#conclusiones">Conclusiones</a>
-      <a href="#concepto">Concepto</a>
+  <!-- Barra fija (aparece cuando Algo ya ha salido del móvil) -->
+  <header class="barra">
+    <a class="logo" href="#entrada">manuela<b>.</b><span>TadeoParrado</span></a>
+    <nav>
+      <a href="#hablar" data-ir="hablar">Habla con Algo</a>
+      <a href="#habitacion" data-ir="habitacion">Visita a Algo</a>
+      <a href="memoria.html">La investigación</a>
+      <a href="https://github.com/manuelatadeoparrado/ejercicio1" target="_blank" rel="noopener">El proceso ↗</a>
     </nav>
   </header>
 
-  <!-- SCROLL 1 · HOME -->
-  <section class="scroll home" id="home">
-    <h1>¿Y si mi algoritmo pudiera hablar por mí?</h1>
-    <div class="home-texto">
-      <p class="etiqueta">Pregunta de investigación</p>
-      <p class="pregunta">¿Qué revela el contenido que consumo en Instagram sobre mis intereses, mis gustos visuales y la identidad que construyo en el entorno digital?</p>
-      <p class="intro">Cada like, cada guardado y cada vídeo que veo hasta el final le cuenta algo a Instagram sobre mí. En esta investigación analizo mis propios datos (las cuentas que sigo, lo que guardo y los temas que la plataforma cree que me interesan) para descubrir qué imagen de mí ha construido el algoritmo. A partir de ahí, convierto esa información en un avatar: una criatura que piensa, habla y responde como yo… o como el algoritmo cree que soy.</p>
-      <a class="boton" href="#chat">Habla con Algo</a>
-    </div>
-    <img class="home-algo" src="img/algo-home.png" alt="Algo, un peluche marrón con gorrito verde lima">
-  </section>
+  <!-- =========================================================
+       ESCENA 1 · ALGO SE ESCAPA DEL MÓVIL
+       ========================================================= -->
+  <section class="escena entrada" id="entrada">
+    <p class="entrada-titulo">¿Y si mi algoritmo<br>pudiera hablar por mí?</p>
 
-  <!-- SCROLL 2 · DATOS -->
-  <section class="banda banda-lima" id="datos">
-    <div class="scroll datos">
-      <h2>Datos</h2>
-      <div class="datos-texto">
-        <p class="etiqueta">Comportamiento analizado</p>
-        <p>He analizado cómo uso Instagram durante el último año: qué contenido consumo, qué guardo, a quién sigo y en qué momentos del día estoy más activa.</p>
-        <p class="etiqueta">Datos recogidos</p>
-        <p>Descarga de mis datos de Instagram (octubre de 2026):</p>
-        <ul>
-          <li>Publicaciones y reels a los que he dado like</li>
-          <li>Publicaciones guardadas</li>
-          <li>Cuentas que sigo y cuentas que me siguen</li>
-          <li>Publicaciones y vídeos vistos</li>
-          <li>Temas que Instagram usa para mostrarme anuncios</li>
-          <li>Mis comentarios y mis propias publicaciones</li>
-        </ul>
-      </div>
-      <div class="cifras">
-        <div class="cifra cifra-grande"><strong>2.244</strong><span>likes en un año · 2 de cada 3, en reels</span></div>
-        <div class="cifra"><strong>546</strong><span>seguidos</span></div>
-        <div class="cifra"><strong>490</strong><span>seguidores</span></div>
-        <div class="cifra"><strong>72</strong><span>guardados</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SCROLL 3 · REFERENTES -->
-  <section class="scroll referentes" id="referentes">
-    <h2>Referentes</h2>
-    <div class="refs">
-        <article class="ref">
-          <h3>Data Selfie</h3>
-          <a href="https://dataselfie.it" target="_blank" rel="noopener">www.dataselfie.it</a>
-          <img src="img/ref-dataselfie.jpg" alt="Captura de la web de Data Selfie">
-          <p class="etiqueta">Qué cuenta y cómo lo cuenta</p>
-          <p>Una extensión de navegador que registraba lo que mirabas en Facebook y te enseñaba qué deducían las máquinas sobre ti: personalidad, gustos, ideas. Lo cuenta como un informe de datos, bastante frío y técnico.</p>
-          <p class="etiqueta">Qué me llevo y qué no</p>
-          <p>Me llevo la idea de enseñar lo que la máquina cree de ti y compararlo con quién eres. No me llevo la estética tan fría: yo quiero algo más cercano, con Algo.</p>
-        </article>
-        <article class="ref">
-          <h3>Click Click Click</h3>
-          <a href="https://clickclickclick.click" target="_blank" rel="noopener">clickclickclick.click</a>
-          <img src="img/ref-clickclickclick.jpg" alt="Captura de la web de Click Click Click">
-          <p class="etiqueta">Qué cuenta y cómo lo cuenta</p>
-          <p>Una web que te observa mientras la usas y va narrando con voz en off todo lo que haces con el ratón. Lo cuenta con humor, haciéndote sentir observada.</p>
-          <p class="etiqueta">Qué me llevo y qué no</p>
-          <p>Me llevo el tono gracioso y que la web reaccione a ti en directo. No me llevo la sensación de vigilancia: quiero que hablar con Algo sea divertido, no incómodo.</p>
-        </article>
-        <article class="ref">
-          <h3>Akinator</h3>
-          <a href="https://es.akinator.com" target="_blank" rel="noopener">www.akinator.com</a>
-          <img src="img/ref-akinator.jpg" alt="Captura de la web de Akinator">
-          <p class="etiqueta">Qué cuenta y cómo lo cuenta</p>
-          <p>Un genio en una web que adivina en qué personaje estás pensando haciéndote preguntas. Lo cuenta como una conversación con un personaje que tiene su propia personalidad.</p>
-          <p class="etiqueta">Qué me llevo y qué no</p>
-          <p>Me llevo la idea de hablar con un personaje que parece saberlo todo de ti, como hará Algo. No me llevo las preguntas de sí o no: a Algo le puedes preguntar lo que quieras.</p>
-        </article>
-        <article class="ref">
-          <h3>Replika</h3>
-          <a href="https://replika.com" target="_blank" rel="noopener">replika.com</a>
-          <img class="izq" src="img/ref-replika.jpg" alt="Captura de la web de Replika">
-          <p class="etiqueta">Qué cuenta y cómo lo cuenta</p>
-          <p>Una app de chat con un avatar que hace de amigo virtual y aprende de lo que le cuentas. Lo cuenta como una conversación íntima, con un personaje 3D que puedes personalizar.</p>
-          <p class="etiqueta">Qué me llevo y qué no</p>
-          <p>Me llevo la idea de un avatar con el que hablas como con una persona. No me llevo que intente ser tu amigo y que pases el máximo tiempo con él: Algo solo sabe lo que sabe mi algoritmo, y eso es lo que quiero enseñar.</p>
-        </article>
-      <div class="refs-algo"><img src="img/algo-perro.png" alt="Algo sentado con un Jack Russell"></div>
-    </div>
-  </section>
-
-  <!-- SCROLL 4 · NARRATIVA -->
-  <section class="scroll narrativa" id="narrativa">
-    <h2>Narrativa</h2>
-    <div class="tabla">
-      <div class="fila"><h3>Qué</h3><p>Una web donde hablas con Algo, un avatar creado con mis datos de Instagram que responde como yo.</p></div>
-      <div class="fila"><h3>Por qué</h3><p>Porque el algoritmo construye una imagen de nosotros que no siempre coincide con quienes somos, y casi nunca la vemos.</p></div>
-      <div class="fila"><h3>Para quién</h3><p>Para personas que usan redes sociales cada día y nunca se han preguntado qué saben de ellas.</p></div>
-      <div class="fila"><h3>Cómo</h3><p>Con una conversación cercana y con humor, a través de un personaje tierno que hace fácil un tema que suele dar miedo.</p></div>
-    </div>
-    <div class="cajas">
-      <div class="caja"><h3>Valores</h3><p>Honestidad (solo uso mis datos reales), cercanía, curiosidad y conciencia digital.</p></div>
-      <div class="caja"><h3>Tono</h3><p>Cercano y divertido, un poco irónico. Como hablar con una amiga: nada frío ni técnico.</p></div>
-    </div>
-    <p class="etiqueta">Keywords</p>
-    <ul class="keywords">
-      <li>Lúdico</li><li>Espejo</li><li>Cercano</li><li>Identidad</li>
-    </ul>
-  </section>
-
-  <!-- SCROLL 5 · CONCLUSIONES -->
-  <section class="banda banda-gris" id="conclusiones">
-    <div class="scroll conclusiones">
-      <h2>Conclusiones</h2>
-      <ul class="lista-conclusiones">
-        <li><p class="etiqueta">El algoritmo elige por mí</p><p>La mayoría de lo que me gusta viene de cuentas que no sigo. Dos de cada tres likes son reels que Instagram me pone delante.</p></li>
-        <li><p class="etiqueta">Consumo de noche</p><p>Mis horas de más actividad son las 22:00 y las 23:00.</p></li>
-        <li><p class="etiqueta">Una mezcla muy concreta</p><p>Mis intereses giran alrededor del gym, Barcelona, el humor, los festivales y el techno, los tatuajes y la arquitectura.</p></li>
-        <li><p class="etiqueta">Lo que guardo y lo que likeo</p><p>Guardo arquitectura, diseño y recetas: lo que me gustaría hacer. Likeo humor y gym: lo que consumo rápido.</p></li>
-        <li><p class="etiqueta">Etiquetas que no he elegido</p><p>Instagram me clasifica como «compradora activa» y «viajera frecuente».</p></li>
-      </ul>
-      <p class="frase-final">El algoritmo construye una versión de mí bastante reconocible, pero exagerada y simplificada. <em>Se parece a mí, pero no soy yo.</em></p>
-    </div>
-  </section>
-
-  <!-- SCROLL 6 · CONCEPTO -->
-  <section class="scroll concepto" id="concepto">
-    <h2>Concepto del proyecto</h2>
-    <div class="tabla">
-      <div class="fila"><h3>Punto de partida</h3><p>Algo es un avatar construido solo con mis datos de Instagram. Habla como yo y responde a lo que le preguntes, pero solo sabe lo que sabe el algoritmo.</p></div>
-      <div class="fila"><h3>Objetivo</h3><p>Hacer visible la distancia entre quién soy y quién cree el algoritmo que soy. Al hablar con Algo, el visitante descubre una versión de mí que se parece, pero no del todo, y se pregunta qué sabrá Instagram de él.</p></div>
-      <div class="fila"><h3>Cómo funcionaría</h3><p>Una web con Algo en el centro. El visitante le escribe y Algo contesta con mi forma de escribir y con mis datos. Al final, la web enseña qué partes son reales y cuáles son la versión del algoritmo.</p></div>
-    </div>
-    <div class="chat-bloque" id="chat">
-      <img class="chat-algo" src="img/algo-saludo.png" alt="Algo saludando con la mano">
-      <div class="chat">
-        <p class="chat-titulo">Chat con Algo</p>
-        <div class="mensajes">
-          <p class="msg yo">hola</p>
-          <p class="msg algo">holaa q tal</p>
-          <p class="msg yo">q te gusta hacer?</p>
-          <p class="msg algo">pues el gym, ir a festivales y mirar casas bonitas, tengo un monton guardadas</p>
-          <p class="msg yo">y a q hora te duermes?</p>
-          <p class="msg algo">tarde, por la noche es cuando mas estoy cn el movil</p>
+    <div class="movil-escenario">
+      <div class="movil" id="movil">
+        <div class="movil-pantalla">
+          <div class="ig-cabecera"><b>manuela</b><span>2.244 likes · 546 seguidos</span></div>
+          <div class="feed" id="feed"></div>
+          <div class="grietas" id="grietas" aria-hidden="true">
+            <svg viewBox="0 0 300 600" preserveAspectRatio="none"><path d="M150 300 L60 120 M150 300 L250 90 M150 300 L40 420 M150 300 L270 470 M150 300 L170 560 M150 300 L120 40 M95 210 L40 230 M210 190 L280 210 M100 360 L30 330 M205 390 L260 360"/></svg>
+          </div>
         </div>
-        <p class="chat-titulo">¿Es así o es lo que cree el algoritmo?</p>
-        <div class="votos">
-          <button class="voto" type="button" aria-pressed="false">lo real</button>
-          <button class="voto" type="button" aria-pressed="false">lo del algoritmo</button>
-        </div>
-        <p class="voto-nota" hidden></p>
+        <div class="algo-dentro" id="algo-dentro"><span class="cuerpo"><span class="sombra"></span><img src="img/pose-1.png" alt=""><span class="parpado izq"></span><span class="parpado der"></span><span class="brillo"></span></span></div>
+      </div>
+      <div class="algo-fuera" id="algo-fuera"><span class="cuerpo"><span class="sombra"></span><img src="img/pose-1.png" alt="Algo, un peluche marrón con gorrito verde lima"><span class="parpado izq"></span><span class="parpado der"></span><span class="brillo"></span></span></div>
+      <p class="globo" id="globo-entrada" hidden></p>
+    </div>
+
+    <div class="puertas" id="puertas" hidden>
+      <p class="puertas-intro">Soy Algo, el algoritmo de Instagram de Manuela. ¿Qué hacemos?</p>
+      <div class="puertas-botones">
+        <a class="puerta puerta-lima" href="#hablar" data-ir="hablar"><span>01</span>Habla con Algo<small>pregúntale lo que quieras</small></a>
+        <a class="puerta" href="#habitacion" data-ir="habitacion"><span>02</span>Visita a Algo<small>entra en su habitación</small></a>
+      </div>
+    </div>
+
+    <button class="saltar" id="saltar" type="button">saltar intro</button>
+  </section>
+
+  <!-- =========================================================
+       ESCENA 2 · HABLA CON ALGO (solo tú y él)
+       ========================================================= -->
+  <section class="escena hablar" id="hablar">
+
+    <!-- Lo que Algo cree que eres (cinta de arriba) -->
+    <div class="cinta" id="cinta" hidden><span>Algo cree que eres:</span><b id="cinta-texto"></b></div>
+
+    <div class="hablar-algo" id="hablar-algo">
+      <span class="cuerpo"><span class="sombra"></span><img id="algo-hablar" src="img/pose-1.png" alt="Algo"><span class="parpado izq"></span><span class="parpado der"></span><span class="brillo"></span></span>
+    </div>
+
+    <div class="conversacion" id="conversacion" aria-live="polite">
+      <p class="pregunta-grande" id="pregunta-grande"></p>
+      <p class="respuesta-grande" id="respuesta-grande"></p>
+      <div class="voces" id="voces"></div>
+    </div>
+
+    <!-- Consentimiento: ¿aceptas que Algo aprenda de ti? -->
+    <div class="permiso" id="permiso">
+      <p class="permiso-titulo">Antes de hablar: ¿aceptas que Algo aprenda de ti?</p>
+      <p>Se va a fijar en lo que preguntas para sacar conclusiones sobre ti, como hace Instagram. No se guarda ni se envía nada: todo se queda en tu navegador y se borra al cerrar.</p>
+      <div class="permiso-botones">
+        <button type="button" class="boton" data-permiso="si">Sí, que aprenda</button>
+        <button type="button" class="boton boton-borde" data-permiso="no">No, solo hablar</button>
+      </div>
+    </div>
+
+    <div class="preguntar" id="preguntar" hidden>
+      <div class="rapidas" id="rapidas"></div>
+      <form class="escribir" id="form">
+        <label class="oculto" for="entrada-texto">Pregúntale algo a Algo</label>
+        <input id="entrada-texto" type="text" placeholder="pregúntale lo que quieras…" autocomplete="off" maxlength="100">
+        <button type="submit">→</button>
+      </form>
+    </div>
+
+    <!-- Resultado: lo que Algo cree que eres + ¿es real? -->
+    <div class="resultado" id="resultado" hidden>
+      <p class="etiqueta">Algo ha terminado de aprender de ti</p>
+      <h2 id="resultado-frase"></h2>
+      <p>¿Es real? Márcalo tú.</p>
+      <ul class="grafica" id="grafica"></ul>
+      <div class="resultado-pie">
+        <p class="pista-cuaderno">Algo lo ha apuntado todo en su cuaderno. <b>Visita su habitación y búscalo.</b></p>
+        <a class="boton" href="#habitacion" data-ir="habitacion">Visitar a Algo →</a>
+      </div>
+    </div>
+
+    <!-- Si no dejó que Algo aprenda -->
+    <div class="resultado" id="resultado-no" hidden>
+      <p class="etiqueta">Fin de la conversación</p>
+      <h2>Algo ya no tiene más que decir. Lo que sabe de mí cabe en 2.244 likes.</h2>
+      <div class="resultado-pie">
+        <p class="pista-cuaderno">Aún puedes visitar su habitación y ver lo que Instagram no ve.</p>
+        <a class="boton" href="#habitacion" data-ir="habitacion">Visitar a Algo →</a>
       </div>
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <!-- =========================================================
+       ESCENA 3 · LA HABITACIÓN DE ALGO
+       ========================================================= -->
+  <section class="escena habitacion" id="habitacion">
+    <div class="habitacion-cabecera">
+      <div>
+        <p class="etiqueta">La habitación de Algo</p>
+        <p class="habitacion-ayuda">Toca las cosas. Algo irá a verlas y te contará qué son.</p>
+      </div>
+      <button class="interruptor" id="interruptor" type="button" aria-pressed="false">
+        <span class="interruptor-algoritmo">modo algoritmo</span>
+        <span class="interruptor-bola"></span>
+        <span class="interruptor-real">modo real</span>
+      </button>
+    </div>
+
+    <div class="cuarto" id="cuarto">
+      <img class="cuarto-img img-algoritmo" id="img-algoritmo" src="img/habitacion-algoritmo.png" alt="" hidden>
+      <img class="cuarto-img img-real" id="img-real" src="img/habitacion-real.png" alt="" hidden>
+      <div class="cuarto-dibujo" id="cuarto-dibujo" aria-hidden="true"><div class="pared-i"></div><div class="pared-d"></div><div class="suelo"></div></div>
+      <div class="objetos" id="objetos"></div>
+      <div class="algo-cuarto" id="algo-cuarto"><span class="cuerpo"><span class="sombra"></span><img src="img/pose-1.png" alt="Algo"><span class="parpado izq"></span><span class="parpado der"></span><span class="brillo"></span></span></div>
+      <p class="globo globo-cuarto" id="globo-cuarto" hidden></p>
+    </div>
+
+    <p class="voz-real" id="voz-real" hidden></p>
+  </section>
+
+  <!-- El cuaderno de apuntes de Algo -->
+  <div class="cuaderno" id="cuaderno" hidden>
+    <div class="cuaderno-hoja">
+      <button class="cerrar" id="cerrar-cuaderno" type="button" aria-label="Cerrar el cuaderno">×</button>
+      <p class="etiqueta">Cuaderno de apuntes de Algo</p>
+      <div id="cuaderno-contenido"></div>
+      <hr>
+      <p class="cuaderno-manuela">Y de Manuela, lo que apunté con 2.244 likes: gym, techno, arquitectura, compradora activa, viajera frecuente, no le gustan los perros.</p>
+      <p class="cuaderno-final">Ni mi algoritmo ni yo sabemos del todo quién soy.<br><b>¿Y el tuyo, qué dice de ti?</b></p>
+      <div class="cuaderno-botones">
+        <a class="boton" href="#hablar" data-ir="hablar" data-reiniciar="1">Volver a hablar con Algo</a>
+        <a class="boton boton-borde" href="memoria.html">Ver la investigación</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="respuestas.js?v=5"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>

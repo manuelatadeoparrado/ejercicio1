@@ -165,6 +165,9 @@ Al ver el vídeo del recorrido: ❌ en tres cosas, que quedan para la siguiente 
 - La salida del móvil se queda corta: Algo no sale de verdad hacia ti.
 - «Habla con Algo» ha perdido la sensación de chat: quiero que las voces reales salten alrededor de Algo y lo vayan rodeando.
 - Algo sigue pareciendo una imagen recortada. Necesito poses más grandes de Gemini.
-- Y la habitación real: 3.ª vuelta con Gemini (zapatero, quitar radiador y cajonera, el coche de Lego, el gorro tirado).
 Lo que sí funciona y me gusta: tocar los objetos y que Algo diga que son suyos, y la gincana del cuaderno.
 Entrego esta versión porque no es la entrega final: lo que se evalúa es que el proceso se pueda seguir y repetir.
+
+## 25/11 · Habitación real, 3.ª vuelta (Gemini)
+Criterio: que sea mi habitación. ✅
+Pido cambios concretos sobre la 2.ª: fuera radiador y cremas, la cajonera con trabajos de la uni encima, el gorro tirado en el suelo, el cuaderno grande en el escritorio, póster de un BMW, mi Lego rosa de Suki, bolsas de compras (eso sí es de mi Instagram). Puntos para tocar recolocados.

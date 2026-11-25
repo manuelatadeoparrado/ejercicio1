@@ -172,18 +172,17 @@ const OBJETOS = [
   { modo: 'algoritmo', id: 'cuaderno', nombre: 'el cuaderno', x: 52, y: 60, algo: 'mi cuaderno de apuntes' },
   { modo: 'algoritmo', id: 'perchero', nombre: 'el perchero', x: 84, y: 42, algo: 'ropa vintage en tonos tierra, mi rollo' },
   { modo: 'algoritmo', id: 'maleta',   nombre: 'la maleta',   x: 76, y: 78, algo: 'viajera frecuente, la maleta siempre lista' },
-  // --- modo real (img/habitacion-real.png) ---
-  { modo: 'real', id: 'julio',    nombre: 'Julio',          x: 43, y: 66, algo: '¿un perro? q va, si nunca les doy like', yo: 'es julio, mi jack russell' },
-  { modo: 'real', id: 'delantal', nombre: 'el delantal',    x: 12, y: 49, algo: 'ni idea de q es eso, yo a la 1 estoy cn el movil', yo: 'los viernes a la 1 estoy trabajando' },
-  { modo: 'real', id: 'coches',   nombre: 'el póster',      x: 34, y: 22, algo: 'coches? eso no es mio, apenas les doy like', yo: 'me gustan los coches y las motos' },
-  { modo: 'real', id: 'movil',    nombre: 'el móvil',       x: 53, y: 83, algo: 'el movil es mi casa', yo: '4 h 30 al día de media' },
-  { modo: 'real', id: 'ropa',     nombre: 'la ropa',        x: 85, y: 46, algo: 'esto no es vintage ni tonos tierra…', yo: 'mi abrigo negro de plumas con pelo en la capucha. y sí, soy un poco desordenada' },
-  { modo: 'real', id: 'bolsa',    nombre: 'la bolsa',       x: 75, y: 73, algo: '¿y mi maleta con pegatinas? soy viajera frecuente', yo: 'uso una bolsa de deporte, tipo eastpak' },
-  { modo: 'real', id: 'cintas',   nombre: 'las cintas',     x: 31, y: 79, algo: 'esto no son pesas', yo: 'son mis cintas para hacer dominadas' },
-  { modo: 'real', id: 'musica',   nombre: 'la música',      x: 57, y: 40, algo: 'aqui deberia haber techno y solo techno', yo: 'el techno es lo que me interesa ahora, pero escucho de todo' },
-  { modo: 'real', id: 'gorro',    nombre: 'el gorro',       x: 66, y: 58, algo: 'mi gorro!', yo: 'el gorro lima es mío de verdad. por eso lo lleva Algo' },
-  { modo: 'real', id: 'bolsas2',  nombre: 'las bolsas',     x: 30, y: 65, algo: 'compradora activa, lo ves?', yo: 'sí, esto lo acierta' },
-  { modo: 'real', id: 'cuaderno', nombre: 'el cuaderno',    x: 62, y: 50, algo: 'mi cuaderno de apuntes' }
+  // --- modo real (img/habitacion-real.png, hecha con Gemini a partir de fotos de mi cuarto) ---
+  { modo: 'real', id: 'julio',    nombre: 'Julio',             x: 53, y: 66, algo: '¿un perro? q va, si nunca les doy like', yo: 'es julio, mi jack russell' },
+  { modo: 'real', id: 'coches',   nombre: 'el póster',         x: 62, y: 24, algo: 'coches? eso no es mio, apenas les doy like', yo: 'me gustan los coches y las motos' },
+  { modo: 'real', id: 'lego',     nombre: 'el coche rosa',     x: 46, y: 20, algo: 'un juguete? ni idea de q es', yo: 'mi lego del coche de suki, de fast and furious' },
+  { modo: 'real', id: 'movil',    nombre: 'el móvil',          x: 32, y: 64, algo: 'el movil es mi casa', yo: '4 h 30 al día de media' },
+  { modo: 'real', id: 'ropa',     nombre: 'la ropa',           x: 65, y: 53, algo: 'esto no es vintage ni tonos tierra…', yo: 'mi abrigo negro de plumas con pelo en la capucha. y sí, soy un poco desordenada' },
+  { modo: 'real', id: 'bolsa',    nombre: 'la bolsa',          x: 72, y: 78, algo: '¿y mi maleta con pegatinas? soy viajera frecuente', yo: 'uso una bolsa de deporte, tipo eastpak' },
+  { modo: 'real', id: 'gorro',    nombre: 'el gorro',          x: 50, y: 80, algo: 'mi gorro!', yo: 'el gorro lima es mío de verdad. por eso lo lleva Algo' },
+  { modo: 'real', id: 'bolsas2',  nombre: 'las bolsas',        x: 55, y: 55, algo: 'compradora activa, lo ves?', yo: 'sí, esto lo acierta' },
+  { modo: 'real', id: 'uni',      nombre: 'los papeles',       x: 45, y: 36, algo: 'recetas guardadas, seguro', yo: 'trabajos de la uni. ahí acumulo cosas' },
+  { modo: 'real', id: 'cuaderno', nombre: 'el cuaderno',       x: 79, y: 46, algo: 'mi cuaderno de apuntes' }
 ];
 
 // El feed del móvil de la entrada (temas que más likeo, de mis datos)

@@ -484,7 +484,22 @@ body.modo-real .algo-cuarto .cuerpo img { filter: saturate(.9) brightness(1.02) 
 .test-opciones button:nth-child(2) { animation-delay: .06s; } .test-opciones button:nth-child(3) { animation-delay: .12s; } .test-opciones button:nth-child(4) { animation-delay: .18s; }
 .test-opciones button:hover { background: var(--acento); transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--texto); }
 .test-paso { margin: 0; color: var(--secundario); font-weight: 700; }
-/* el cuaderno se ve siempre */
-.objeto.cuaderno-obj span { opacity: 1 !important; transform: none !important; background: var(--secundario); color: var(--fondo); border-color: var(--texto); }
-.objeto.cuaderno-obj i { animation: latido 1.2s infinite; }
+/* el cuaderno está escondido: sin punto ni nombre; solo se nota al pasar el ratón justo encima */
+.objeto.cuaderno-obj { width: 70px; height: 50px; }
+.objeto.cuaderno-obj i, .objeto.cuaderno-obj span { opacity: 0 !important; animation: none !important; }
+.objeto.cuaderno-obj:hover { cursor: zoom-in; }
+.objeto.cuaderno-obj:hover i { opacity: 1 !important; background: transparent; border: 2px dashed var(--texto); width: 46px; height: 46px; }
 @media (max-width: 820px) { .test-opciones button { font-size: 16px; padding: 10px 16px; } }
+
+/* sin puntos: se pincha directamente en el objeto; al pasar el ratón sale su nombre */
+.objeto { width: 9%; height: 14%; justify-content: flex-end; border-radius: 18px; }
+.objeto i { display: none !important; }
+.objeto:hover { cursor: pointer; background: radial-gradient(closest-side, rgba(198,227,90,.35), transparent); }
+.objeto span { opacity: 0; transform: translateY(6px); }
+.cuarto.sin-imagen .objeto span { opacity: 0; }
+.objeto:hover span, .objeto:focus-visible span { opacity: 1; transform: none; }
+.objeto.visto:hover { background: radial-gradient(closest-side, rgba(216,196,172,.35), transparent); }
+/* el cuaderno: igual que los demás, pero sin nombre ni brillo (hay que encontrarlo) */
+.objeto.cuaderno-obj { width: 7%; height: 10%; }
+.objeto.cuaderno-obj:hover { background: none; cursor: pointer; }
+.objeto.cuaderno-obj span { display: none; }

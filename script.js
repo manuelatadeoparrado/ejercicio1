@@ -390,7 +390,8 @@ OBJETOS.forEach((o) => {
   b.className = 'objeto ' + (o.modo === 'real' ? 'real' : 'alg') + (o.id === 'cuaderno' ? ' cuaderno-obj' : '');
   b.style.setProperty('--x', o.x + '%');
   b.style.setProperty('--y', o.y + '%');
-  b.innerHTML = `<i></i><span>${o.id === 'cuaderno' ? 'el cuaderno de Algo' : o.nombre}</span>`;
+  b.innerHTML = `<i></i><span>${o.nombre}</span>`;
+  if (o.id === 'cuaderno') b.setAttribute('aria-label', 'algo escondido');
   b.addEventListener('click', () => irObjeto(o, b));
   $('#objetos').appendChild(b);
 });
@@ -454,7 +455,7 @@ function entrarHabitacion() {
   if (!primeraVisita) return;
   primeraVisita = false;
   pose(algoCuarto.querySelector('img'), 'saluda');
-  setTimeout(() => decir(terminado && aprende ? 'pasa pasa. mi cuaderno es el punto marron, el q pone «el cuaderno de Algo»' : 'pasa pasa, toca lo q quieras'), 600);
+  setTimeout(() => decir(terminado && aprende ? 'pasa pasa. he escondido mi cuaderno por aqui… a ver si lo encuentras. pista: en el modo real esta encima de algo de madera' : 'pasa pasa, toca lo q quieras'), 600);
 }
 
 // ---------- el cuaderno de apuntes ----------

@@ -177,3 +177,8 @@ Criterio: que al final Algo te haga un test a TI, no sobre mí, y que el cuadern
 - Antes, el resultado salía de lo que preguntabas sobre mí y parecía un test sobre Manuela. ❌
 - Ahora, cuando Algo se satura, te pregunta 5 cosas a ti (a qué hora miras el móvil, qué te sale en el feed, perros o gatos, si has comprado por un anuncio, si te fías de Instagram). Con cada respuesta te pone una etiqueta exagerada (88-99 %) y al final dice qué cree que eres. Lo marcas como real o no y lo encuentras en su cuaderno.
 - El cuaderno lleva su nombre siempre visible («el cuaderno de Algo») y Algo te dice dónde está.
+
+## 25/11 · Esconder el cuaderno
+Criterio: que el cuaderno se tenga que buscar, como en una gincana. 1 vuelta. ✅
+- Antes tenía su nombre siempre visible y se iba directo a él. ❌
+- Ahora no tiene punto ni nombre: solo se nota si pasas el ratón justo por encima. Algo da una pista al entrar («en el modo real está encima de algo de madera»).
